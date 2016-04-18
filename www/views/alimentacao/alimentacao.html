@@ -1,0 +1,22 @@
+<ion-view view-title="Alimentacao">
+  <ion-nav-buttons side="secondary">
+<button class="button button-icon ion-plus-circled" ng-click="agregar()"></button>
+    </ion-nav-buttons>
+  <ion-content class="padding-top">
+
+      <ion-item ng-repeat="alimentar in alimento">
+
+      <p>
+        <div class="list">
+
+          <a class="item item-avatar">
+            <img src="img/almoco.png">
+            <h2>{{alimentar.Nome}}</h2>
+            <p>{{alimentar.Endereco}} | Fone: {{alimentar.Fone}}</p>
+
+          </a>
+
+      </p>
+    </div>
+
+</ion-view>

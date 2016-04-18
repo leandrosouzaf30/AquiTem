@@ -1,0 +1,21 @@
+<ion-view view-title="Escolas">
+  <ion-nav-buttons side="secondary">
+<button class="button button-icon ion-plus-circled" ng-click="agregar()"></button>
+    </ion-nav-buttons>
+  <ion-content class="padding-top">
+
+      <ion-item ng-repeat="escolar in escola">
+        <p>
+          <div class="list">
+
+            <a class="item item-avatar">
+              <img src="img/escola.png" width="20%">
+              <h2>{{escolar.Nome}}</h2>
+              <p>{{escolar.Endereco}} | Fone: {{escolar.Fone}}</p>
+
+            </a>
+
+        </p>
+      </div>
+
+</ion-view>

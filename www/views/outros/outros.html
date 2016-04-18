@@ -1,0 +1,22 @@
+<ion-view view-title="Outros">
+  <ion-nav-buttons side="secondary">
+<button class="button button-icon ion-plus-circled" ng-click="agregar()"></button>
+    </ion-nav-buttons>
+  <ion-content class="padding-top">
+
+      <ion-item ng-repeat="outro in outros">
+
+      <p>
+        <div class="list">
+
+          <a class="item item-avatar">
+            <img src="img/outros.png">
+            <h2>{{outro.Nome}}</h2>
+            <p>{{outro.Endereco}} | Fone: {{outro.Fone}}</p>
+
+          </a>
+
+      </p>
+    </div>
+
+</ion-view>

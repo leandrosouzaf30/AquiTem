@@ -1,0 +1,39 @@
+<ion-view view-title="Aqui tem!" hide-back-button="true">
+
+  <ion-nav-buttons side="primary">
+<button class="button button-icon icon ion-information" ng-click="sobre()"></button>
+
+</ion-nav-buttons>
+
+  <ion-nav-buttons side="secondary">
+<button class="button button-icon ion-log-out" ng-click="logout()"></button>
+
+
+    </ion-nav-buttons>
+
+    <ion-content class="padding-top">
+      <div ng-if="authData.facebook" class="list card">
+          <div class="item item-avatar">
+            <img ng-src="{{authData.facebook.profileImageURL}}" alt="{{authData.facebook.displayname}}">
+            <h1>{{authData.facebook.displayName}}<h1>
+          </div>
+        </div>
+
+  <div class="wrap">
+
+    <p>
+      <a href="#escolas" class="subdued"><img src="img/escola.png" width="15%"></a>
+      <a href="#alimentacao" class="subdued"><img src="img/almoco.png" width="15%"></a>
+      <a href="#barbear" class="subdued"><img src="img/cabelo.png" width="16%"></a>
+      <a href="#padaria" class="subdued"><img src="img/pao.png" width="16%"></a>
+      <a href="#outros" class="subdued"><img src="img/outros.png" width="15%"></a>
+    </p>
+
+  </div>
+
+<div class="wrap">
+<img src="img/novo.jpg">
+</div>
+
+</ion-content>
+</ion-view>
